@@ -79,8 +79,8 @@ class Dots_method(APIView):
         return Response(status=status.HTTP_200_OK)
         
 
-    def get(self, request ,codigo):
-        dots=Dots.objects.filter(user_id=codigo)
+    def get(self, request ,codigo): 
+        dots=Dots.objects.filter(device_id=codigo)
         content={}
         # locations_list=[]
         # for i in locations:
